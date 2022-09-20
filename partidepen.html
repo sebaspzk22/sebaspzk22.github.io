@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='partidepen.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <div class="header__superior">
+                <div class="logo">
+                    <img src="Batman-Logo.png" >
+                </div>
+            </div>
+            <div class="container__menu">
+                <div class="menu">
+                    <input type="checkbox" id="check__menu">
+                    <label id="#label__check" for="check__menu">
+                        <i class="fa-solid fa-bars icon__menu"></i>
+                    </label>
+                    <nav>
+                        <ul>
+                            <li><a href="ejemplo.html" id="selected"></a></li>
+                            <li><a href="#"><b>Ingles</b></a>
+                            <ul>
+                                <li><a href="Simple.html"><b>Simple Present</b></a></li>
+                                <li><a href="modalverb.html"><b>Modal Verb</b></a></li>
+                                <li><a href="pronouns.html"><b>Pronouns</b></a></li>
+                               
+                            </ul>
+                            </li>
+                            <li><a href="#"><b>Base de datos</b></a>
+                                <ul>
+                                    <li><a href="partidepen.html"><b>Participacion y dependencia de existencia</b></a></li>
+                                    <li><a href="reglaintegridad.html"><b>Reglas de integridad</b></a></li>
+                                    <li><a href="algebrar.html"><b>Algebra Relacional</b></a></li>
+                                    <li><a href="bd.html"><b>Desarrollo Parcial</b></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><b>Sistemas Operativos</b></a>
+                                    <ul>
+                                        <li><a href="kernel.html"><b>KERNEL</b></a></li>
+                                        <li><a href="#"></a></li>
+                                        
+                                    </ul>
+                                 
+                            </li>
+                            <li><a href="#"><b>Programacion web front end</b></a>  
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                  
+                                </ul>
+                            </li>
+                            <li><a href="#"><b>Calculo III</b></a>
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                   
+                                </ul>
+                            </li>
+                            <li><a href="#"><b>Fisica Mecanicas</b></a>
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                   
+                                </ul>
+                            
+                            </li>
+    
+                            <li><a href="mihorario.html"><b>Mi Horario</b></a></li>
+                        </ul>
+    
+                    </nav>
+                </div>
+    
+            </div>
+        </header>
+        
+        <main>
+            <article>
+              <h2>Participacion y dependencia de existencia</h2>
+              <br>
+              <h3>Participacion de una existencia</h3>
+              <p>al momento de hacer mencion de una Participacion de existencia nos estamos refiriendo a la cardinalidad de una relacion.
+               <br>
+               <br>
+                en estos casos se nos muestra la participacion de la entidad en dicha relacion, el minimo hasta el maximo si en un caso el minimo es 1 y el maximo
+                es n la participacion se (1,n).
+                <p>un ejemplo de esto podria ser:
+                    <br>
+                    <br>
+                    <img src="tema2-019.png">
+                    <br>
+                    <br>
+                    en esto podemos observar el como la entidad conductor y la entidad coche estan relacionadas por que el conductor conduce el coche, sabemos que un coche es conducido por un 
+                    conductor y que un conductor conduce un coche haciendo que tanto el minimo sea 1 y el maximo 1 por lo que la participacion de ambos es de (1,1).
+                </p>
+
+                <br>
+                
+                <h3>Dependencia de existencia</h3>
+                <p>En este caso se presenta cuando una entidad debil necesita de una entidad fuerte para poder existir.
+                    En este caso si la entidad fuerte desaparece la entidad debil carece de sentido alguno.
+                </p>
+                <p>Un ejemplo de la dependencia sería:</p>                
+                <br>
+                <img src="tema2-023.png">
+                <br>
+                <p>En la figura se muestra el caso de que un empleado puede tener ninguno, uno o varios hijos, por lo que los datos de los hijos deben sacarse en una entidad aparte,
+                 aunque siguen siendo datos propios de un empleado. Si se eliminase un registro de un empleado, no tendría sentido seguir manteniendo en la base datos la información sobre sus hijos.</p>
+                </p>
+            </article>
+        </main>
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>
